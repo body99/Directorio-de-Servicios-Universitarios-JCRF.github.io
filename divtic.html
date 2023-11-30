@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>DIVTIC</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>¿Qué es?</h2>
+      <p>
+        El Consejo Divisional es el órgano de gobierno de la División de Ingenierías. Lo preside el Director y su composición se establece en el artículo 60 de la ley órganica.<br>
+
+    <br><b>De acuerdo a dicho artículo, se integra por:</b><br>
+        1. El Director de la División, quien lo preside y convoca.
+        <br>2. Los Jefes de los Departamentos que constituyan la División.
+        <br>3. Un consejero académico por cada Departamento.
+        <br>4. Un número de consejeros alumnos igual al número de Departamentos existentes en la División.
+
+    <br><br>Por su parte el secretario de la División funge como Secretario de Actas y Acuerdos del Consejo Divisional.<br>
+      </p>
+      
+      <br><h2>Objetivos generales y particulares</h2>
+        <p>
+            <b>Generales</b>
+            <br>El objetivo del diplomado es formar profesionales en ciberseguridad ofensiva, que exhiban una alta responsabilidad en el diseño, desarrollo e implementación de estrategias de análisis de vulnerabilidades y respuesta activa como respuesta a la aplicación de una experimentación ética sobre la infraestructura, las aplicaciones o los servicios digitales de una instancia proveedora de tecnologías de la información.
+        </p>
+        
+      <br><h2>Particulares</h2>
+      <p>
+        1. Brindar los conocimientos al alumno los fundamentos operativos de la ciberseguridad y el análisis de vulnerabilidad, así como una perspectiva integral del ecosistema de interacción en redes locales y corporativas.
+        <br>2. Proveer los principios de la invasión y agresión ética sobre sobre la infraestructura, las aplicaciones o los servicios digitales pertenecientes una instancia proveedora de tecnologías de la información.
+        <br>3. Aplicar el conjunto de herramientas de Inteligencia en Código Abierto para la ciberseguridad ofensiva.
+        <br>4. Desarrollar estrategias de seguridad ofensiva como base para el diseño de plan de mejora continua en ciberseguridad, tomando en cuenta las tendencias innovadoras en el tema.
+        <br>5. Proveer un espacio de interacción académica y desarrollo para profesionales que buscan una reconversión de su dedicación productiva hacia el área de la ciberseguridad ofensiva.
+      </p>
+        
+        <br><p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

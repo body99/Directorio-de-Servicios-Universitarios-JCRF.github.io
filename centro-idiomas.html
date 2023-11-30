@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Centro de Idiomas</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>¿Qué es?</h2>
+      <p>
+          El centro de idiomas es un lugar en CUCEI donde se pueden estudiar idiomas por cuenta propia, el cual está situado en la parte de arriba del Centro Integral de Documentación (Biblioteca).<br>
+      </p>
+        
+        <br><img src="9.1.png" style="display: block; margin: 0 auto; width: 55%;"> <p>
+      
+      <br><h2>Idiomas</h2>
+        <p>
+            Los idiomas disponibles para estudiar son:
+            <li>Inglés.</li>
+            <li>Alemán.</li>
+            <li>Francés.</li>
+            <li>Portugués.</li>
+            <li>Japonés.</li>
+            <li>Italiano.</li>
+            <li>Ruso.</li>
+            <li>Chino.</li>
+            <li>Coreano.</li>
+        </p>
+        
+      <br><h2>Materiales</h2>
+      <p>
+           <li>CD (Programas).</li>
+           <li>Libros.</li>
+           <li>Videos.</li>
+           <li>Juegos.</li>
+      </p>
+        
+      <br><h2>Asistencias y horarios</h2>
+        <p>
+            Lunes a viernes - 8:00 a 19:45
+            <br>Sábado - 8:00 a 13:45
+            <br>
+            <br><b>Nota:</b> Se debe asistir un mínimo de 3 horas a la semana.
+        </p>
+            
+      <br><h2>Requisitos</h2>
+        <p>
+            <li>Registrarse en <a href="http://caa.cucei.udg.mx/" target="_blank"> http://caa.cucei.udg.mx/ </a></li>
+            <li>Descargar el contrato y hojas anexas.</li>
+            <li>Entregar la documentación en recepción.</li>
+            <li>Contrato con foto y hojas anexas firmadas en carpeta beige tamaño carta.</li>
+        </p>
+        
+        
+      <br><h2>Preguntas frecuentes</h2>
+            <b>¿Tiene algún costo la inscripción?</b>
+                <br><p>No, es totalmente gratis para los alumnos del centro universitario, incluyendo los materiales que ofrece la instalación.</p>
+        
+            <br><b>¿Qué materiales ofrece el centro de idiomas para los alumnos?</b>
+                <br><p>libros en físico y digital, audiolibros, computadoras, y una aplicación para que el alumno vaya aprendiendo el idioma de una manera más eficiente y divertida. La aplicación es 'Rosetta Stone'.</p>
+        
+            <br><b>¿Tienen alguna página para que el alumno pueda utilizar los audiolibros y libros digitales fuera de la instalación?</b>
+                <br><p>No, este material solamente puede ser utilizado dentro de la instalación.</p>
+        
+            <br><b>¿Con cuántas aulas cuenta el centro de idiomas?</b>
+                <br><p>Contamos con tres. Dos aulas grandes y una chica. Cuando son pocos alumnos los que van a practicar y estudiar cualquier idioma, se les asigna el aula más pequeña. Para utilizar esta última, es necesario que los alumnos estén registrados y que sean mínimo tres.<br>
+                También se aplica este mismo requisito si los alumnos desean abrir un club de conversación.</p>
+        
+            <br><b>¿Ofrecen clases para que los alumnos puedan estudiar la gramática?</b>
+                <br><p>En este momento no, ya que no contamos con profesores.</p>
+        
+        
+            <br><b>¿Cualquier alumno puede ofrecer clases de gramática? Y, en ese caso, ¿Se le contará como servicio social?</b>
+                <br><p>Sí, cualquier alumno puede impartir clases de gramática, siempre y cuando esté capacitado y demuestre que realmente domina el idioma.<br>
+                Y no, no le contará como servicio social. En cambio, se le dará un certificado para que pueda agregarlo a su CV.</p><br>
+    
+        
+        <p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

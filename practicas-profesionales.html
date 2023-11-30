@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Unidad de Vinculación y Prácticas Profesionales</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+<p>La unidad de vinculación es aquella que permite y logra que los alumnos tengan contacto con cosas de interés.</p>
+
+<h2>Bolsa de trabajo (Licenciaturas, ingenierías y ciencias)</h2>
+<p>La unidad de Vinculación es la responsable del programa de practicantes. Dentro de sus funciones se encuentra:</p>
+
+  1. Realizar el vínculo entre el CUCEI y entidades receptoras mediante la realización de un convenio, a este convenio se le denomina convenio específico de prácticas profesionales.
+  <br>2. Gestionar vacantes con empresas o dependencias vinculadas.
+  <br>3. Llevar el proceso de asignación de los estudiantes del programa de prácticas profesionales.<br>
+
+
+<br><h2>División de Electrónica y Computación - Prácticas Voluntarias</h2>
+<p>Porcentaje de créditos para realizarlas: se recomienda a partir del 50% o si la empresa considera al alumno apto para las actividades cuando tenga menor cantidad de créditos.</p>
+<p>Horas mínimo: 300 horas</p>
+<p>Valor de créditos: no genera créditos</p>
+
+<p>La unidad de vinculación facilita la bolsa de trabajo para los estudiantes que conforman el centro universitario, brindando informes, opciones e incluso ayudando con el curriculum.</p>
+
+<br><h2>Becas universitarias</h2>
+<p>Esta unidad también facilita la solicitud de becas, desde información, papeleo, formatos y demás.</p>
+
+<br><h2>Intercambios</h2>
+<p>También puede ayudarte con la información, papeleo y conocimiento acerca de las convocatorias de intercambios estudiantiles, proceso mediante el cual se pueden obtener estancias por movilidad durante uno o dos calendarios.</p>
+
+<br><h2>Ubicación</h2>
+
+<br> <img src="5.1.png" style="display: block; margin: 0 auto; width: 60%;"> <p> <br>
+
+    
+        
+<br><p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

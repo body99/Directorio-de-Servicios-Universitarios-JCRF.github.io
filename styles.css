@@ -1,0 +1,119 @@
+/* Reset de estilos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  padding-bottom: 150px;
+  position: relative;
+  background: #f2f2f2;
+}
+
+h1, p, b, strong, a {
+  font-family: 'Arial', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-family: 'Arial', sans-serif;
+  font-size: 19px;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+h1 {
+  font-size: 2em;
+  text-align: center;
+  margin: 0;
+}
+
+h2 {
+  border-bottom: 1px solid #ccc; /* Agrega una línea bajo cada h2 */
+  padding-bottom: 5px; /* Espaciado entre la línea y el texto */
+}
+
+header {
+  /* Mantén el estilo del encabezado */
+  background: #FF6600; /* Color base del encabezado */
+  background: linear-gradient(to bottom, #e05a00, #c45002); /* Degradado sutil */
+  color: white;
+  padding: 10px 20px; /* Espaciado interno */
+  text-align: center;
+  opacity: 0; /* Inicialmente, el encabezado estará oculto */
+  animation: fadeInHeader 0.1s ease-in-out forwards; /* Animación fadeIn */
+}
+
+@keyframes headerFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+header {
+  /* ... (estilos previos del header) */
+  opacity: 0; /* Oculta inicialmente el header */
+  animation: headerFadeIn 0.5s ease forwards; /* Animación de fade-in */
+}
+
+header h1 {
+  font-size: 1.5em; /* Reducción del tamaño del título */
+  margin: 0;
+}
+
+main {
+  padding: 50px;
+  background: #fff; /* Fondo blanco */
+  border-radius: 10px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.1);
+  width: 80%;
+  max-width: 1200px; /* Reducción del ancho del contenido */
+  margin: 30px auto;
+}
+
+footer {
+  background-color: #00001c;
+  color: white;
+  padding: 10px 0;
+  position: fixed;
+  bottom: -100px; /* Esconde inicialmente el pie de página */
+  left: 0;
+  width: 100%;
+  font-size: 0.8em;
+  transition: bottom 0.5s ease; /* Agrega una transición más suave */
+}
+
+/* Estilo para mostrar el pie de página al activarse */
+body.footer-active footer {
+  bottom: 0;
+}
+
+/* Estilo para el enlace de regreso con la flecha */
+a[href="index.html"] {
+  display: inline-block;
+  padding-left: 20px; /* Espacio para la imagen */
+}
+
+/* div img */
+.image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1px; /* Espacio entre imágenes */
+}
+
+.image-container img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+}

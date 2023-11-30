@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Biblioteca</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Ubicación y Horarios</h2>
+      <p>
+          <strong>Ubicación:</strong><br>
+          Se encuentra ubicada frente al estacionamiento. Si entramos por Bulevard encontraremos el edificio.<br>
+          
+          <br><strong>Horarios:</strong><br>
+          <li>Lunes a Viernes de 8:00am a 6:45pm</li>
+          <li>Sábados 8:00am a 1:45pm</li>
+      </p>
+        
+          <br> <img src="2.1.png" style="display: block; margin: 0 auto; width: 55%;"> <p> <br>
+      
+      <h2>Ingreso</h2>
+        <p>
+            Únicamente es necesario escribir tu código. Se le pide al alumno las reglas básicas de convivencia: No hablar, no fumar, mantener el orden y cuidar tanto el material como las instalaciones. 
+        </p> <br>
+        
+      <h2>¿Qué servicios Brinda?</h2>
+        <p>
+            La biblioteca cuenta con el servicio de préstamos de libros y computadoras, además de consultas (libros, comics, tesis).<br>
+            <br><strong>Préstamos:</strong><br>
+            Credencial vigente. De ser de primer ingreso, es necesario presentar tu cédula. En caso de extraviar la credencial, se pide el comprobante de reposición. Se toma nota del estado del libro, de regresar dañado se solicita una reposición.
+
+        </p> <br>
+        
+      <h2>Cubículos</h2>
+        <p>
+            <br><strong>Cubículos grupales:</strong><br>
+            Ideal para trabajos grupales. Cuenta con pizarrón y mejor internet. Se necesitan de 4 a 6 personas, todas con credencial vigente.
+        </p> 
+        
+        <br> <img src="2.2.png" style="display: block; margin: 0 auto; width: 55%;"> <p> <br>
+        
+        <p>
+            <br><strong>Cubículos Individuales:</strong><br>
+            Con conectores para tu máquina, los cubículos individuales que se encuentran junto al centro de fotocopiado.
+        </p> 
+        
+        <br> <img src="2.3.png" style="display: block; margin: 0 auto; width: 55%;"> <p> <br>
+        
+      <h2>Centro de fotocopiado</h2>
+        <p>
+            Cuenta con impresora donde, con las computadoras aledañas, puedes enviar tus archivos. Igualmente cuenta con venta de útiles escolares y básicos. 
+        </p> 
+        
+        <br> <img src="2.4.png" style="display: block; margin: 0 auto; width: 55%;"> <p> <br>
+        
+      <h2>Servicios en línea e Informes</h2>
+        <p>
+            <li>Biblioteca Digital</li>
+            <li>Catálogo en Línea (ALEPH)</li>
+            <li>Asesoría Virtual</li>
+            
+            <br>Teléfono (33)13785900 ext. 27489 
+            <br>Correo: <a href="mailto:ubiblio@cucei.udg.mx"> ubiblio@cucei.udg.mx </a>
+            <br>Síguelos en Facebook:<a href="http://www.facebook.com/CIDCUCEI" target="_blank"> www.facebook.com/CIDCUCEI. </a>
+
+
+        </p> <br>
+        
+      <h2>Instalaciones</h2>
+        <p>
+        <br> <img src="2.5.png" style="display: block; margin: 0 auto; width: 55%;"> <p> <br>
+        </p> <br>
+        
+        
+<p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

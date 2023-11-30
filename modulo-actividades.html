@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Módulo de Actividades Culturales y Deportivas</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Talleres Culturales</h2>
+
+    <p>
+        Para fomentar la formación integral de los estudiantes, el Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI), a través del Módulo de Actividades Culturales (MAC) dependiente de la Coordinación de Extensión, así como de las Divisiones y coordinaciones de carrera, organiza diversas actividades relacionadas con el arte, el desarrollo de habilidades artísticas y la promoción de la cultura en general.
+    </p>
+
+    <p>
+        Entre estas actividades se incluyen funciones de teatro, cine, conciertos y conferencias. Destacan, por su permanencia, la muestra de artes plásticas y los talleres culturales que se llevan a cabo cada ciclo escolar, así como los eventos organizados periódicamente en referencia a las distintas carreras.
+    </p>
+
+    <p>
+        Específicamente, los talleres culturales son programas formativos dirigidos a estudiantes, maestros y trabajadores, impartidos por profesores capacitados dentro de las instalaciones del centro universitario. Al finalizar cada ciclo escolar, los participantes en estos talleres muestran públicamente el desarrollo de sus habilidades.
+    </p>
+
+    <p>
+        La variedad de talleres ofrecidos depende de la demanda e incluye: baile (afroantillano, banda, danza árabe, danzas polinesias, jazz, regional y rock de los 60’s), teatro, yoga, canto, guitarra clásica, Tuna de CUCEI (femenil y varonil), y violín. También se imparten talleres de ajedrez, capoeira, dibujo y pintura, juegos de mesa alternativos, así como talleres enfocados en comunicación, liderazgo, lectura veloz, oratoria y declamación.
+    </p>
+
+    <p>
+        El Módulo de Actividades Culturales se encuentra ubicado en el módulo "A", planta alta del CUCEI.
+    </p>
+
+    <p>
+        Horario de atención: de lunes a viernes, de 09:00 a 15:00 horas.
+    </p>
+
+    <p>
+        Para mayores informes, puedes contactarnos al teléfono: <a href="tel:+523313785900">33 1378 5900 ext. 27424</a> o mediante correo electrónico: <a href="mailto:acultural@cucei.udg.mx">acultural@cucei.udg.mx</a>.
+    </p><br>
+        
+         <div class="image-container">
+    <img src="4.1.png" style="width: 30%;">
+    <img src="4.2.png" style="width: 30%;">
+    <img src="4.3.png" style="width: 30%;">
+         </div><br>
+    
+    <br><h2>Entrenamiento Deportivo</h2>
+
+    <p>
+        El Centro Universitario de Ciencias Exactas e Ingenierías (CUCEI) fomenta la organización de equipos y torneos de carácter deportivo. En el CUCEI, los estudiantes pueden participar en equipos de Futbol Femenil y Varonil, futbol bardas, voleibol, básquetbol, ajedrez, atletismo, béisbol, gimnasia aeróbica, halterofilia, judo, karate, handball, tae kwon do, tenis, entre otros.
+    </p>
+
+    <p>
+        Gracias a la ubicación privilegiada del CUCEI, se tiene acceso a instalaciones deportivas que se encuentran junto al centro universitario. Estas instalaciones, aunque no son parte directa del centro universitario, están disponibles para todos los miembros del CUCEI bajo los requisitos correspondientes.
+    </p>
+
+    <p>
+        Entre las instalaciones destacadas se encuentran: la alberca olímpica, el coliseo olímpico, la pista de tartán para atletismo, y las canchas de futbol, básquetbol, béisbol, voleibol, entre otras.
+    </p>
+
+    <p>
+        La organización de las actividades deportivas en el CUCEI se realiza a través del módulo de Actividades Deportivas de la Coordinación de Extensión, que se encuentra ubicado en el módulo A, planta alta.
+    </p>
+
+    <p>
+        Para obtener más información, se puede contactar a CUCEI por teléfono al: <a href="tel:+523313785900">33 1378 5900 ext. 27424</a> o mediante correo electrónico: <a href="mailto:cdext.deportes@red.cucei.udg.mx">cdext.deportes@red.cucei.udg.mx</a>.
+    </p>
+        
+    <p>
+        Facebook en <a href="https://www.facebook.com/deportecucei">https://www.facebook.com/deportecucei</a> para conocer más sobre las actividades deportivas.
+        </p><br>    
+        
+        <div class="image-container">
+    <img src="4.4.png" style="width: 30%;">
+    <img src="4.5.png" style="width: 30%;">
+    <img src="4.6.png" style="width: 30%;">
+         </div><br>
+
+    
+        
+<br><p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Coordinación de Tecnologías para el Aprendizaje (CTA)</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>¿Qué es?</h2>
+      <p>
+          La Coordinación de Tecnologías para el Aprendizaje (CTA) es la encargada de administrar, controlar y realizar todas las actividades que estén relacionadas con los sistemas tecnológicos para apoyar la enseñanza en este centro universitario, así como para todas aquellas herramientas tecnológicas que apoyen a los administrativos y académicos en la realización de sus labores.<br>
+      </p>
+      
+      <br><h2>Misión</h2>
+        <p>
+            La misión consiste en proveer, administrar y mantener tecnologías de información y comunicación que respalden las actividades fundamentales de la comunidad de CUCEI (docencia, investigación, extensión, internacionalización, gestión y gobierno institucional). Este propósito se alcanza mediante la entrega de una amplia gama de servicios tecnológicos eficientes e innovadores, garantizando la satisfacción de los usuarios y sus necesidades a través de la calidad, el compromiso de nuestro personal y la eficacia en los tiempos de respuesta.</p>
+        
+      <br><h2>Visión</h2>
+      <p>
+           Ser una institución reconocida por su liderazgo en la mejora de los procesos de aprendizaje dentro de la comunidad universitaria de CUCEI. Aspiramos a ser un referente en la eficiente aplicación y uso de tecnologías de información y comunicación, gracias a la calidad de nuestros productos y servicios. Estos son implementados por un equipo entusiasta, con alta capacidad técnica, arraigado en valores éticos, responsabilidad y compromiso institucional.
+      </p>
+        
+      <br><h2>Valores</h2>
+        
+        <p>
+        Para lograr su misión y visión la CTA basa su compromiso de trabajo en:<br>
+        <li>La honestidad.</li>
+        <li>El respeto.</li>
+        <li>El servicio oportuno y dedicado con sentido de urgencia valores primordiales que fomenta, promueve y exige por parte de sus colaboradores y demás partes involucradas.</li>
+        </p>
+            
+      <br><h2>Ubicación</h2>
+        <p>
+           Entre los modulos Alfa y Beta en el costado del jardín se encuentra la Coordinación de Tecnologías para el Aprendizaje de CUCEI. 
+        </p>
+        
+        <br> <img src="8.1.png" style="display: block; margin: 0 auto; width: 50%;"> <p> <br>
+        <br> <img src="8.2.png" style="display: block; margin: 0 auto; width: 45%;"> <p> <br>
+        
+      <br><h2>Organigrama</h2>
+        
+        <img src="8.3.png" style="display: block; margin: 0 auto; width: 55%;"> <p> 
+       
+        
+      <br><h2>Servicios</h2>
+        <p>
+        Los principales servicios que provee CTA son:<br>
+        <li>UDG Movil.</li>
+        <li>2. Moodle2 y Correo institucional.</li>
+            
+        <br><b>Internet</b><br>
+            El CUCEI se esfuerza por fortalecer una red de servicios relacionados con las nuevas tecnologías de la información y la comunicación (TIC), dada su relevancia. Entre estos servicios, el internet inalámbrico destaca como uno de los más importantes, disponible en la mayoría de espacios dentro del campus. Sin embargo, debido a la distribución de edificios, instalaciones y usuarios, se observa una variabilidad en la calidad de la recepción en distintas zonas.<br>
+            
+            
+        <br><b>Red UDG Movil</b><br>
+            Es el servicio de conexión inalámbrica que ofrece la Universidad de Guadalajara. Tiene como objetivo brindar acceso a internet en cualquier área donde exista cobertura, independientemente del centro universitario o escuela a la que pertenezcas.<br>
+            
+        <br><b>MOODLE2 CUCEI</b><br>
+            Como apoyo a los procesos de enseñanza aprendizaje, un número importante de profesores utilizan Moodle. Por sus características, Moodle propicia el aprendizaje colaborativo, el intercambio de información y resulta un complemento idóneo para la actividad docente. La CTA también coordina y ofrece los servicios relacionados con el correo electrónico institucional, soporte técnico a los equipos de computo, realización de videoconferencias, capacitación a usuarios y telecomunicaciones en general.<br>
+        </p><br>
+        
+<p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

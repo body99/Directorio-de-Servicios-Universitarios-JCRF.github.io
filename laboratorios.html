@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Laboratorios</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Laboratorio de Redes Cisco</h2>
+      <p>
+          <b>Encargado:</b><br>
+          Carlos Reyes Rios<br>
+          
+          <br><b>Actividades:</b><br>
+          Su función es proveer el aprendizaje teórico-práctico y permitir el aprovechamiento y la cualificación de los conocimientos requeridos para analizar, diseñar e instalar topologías de redes LAN, además de resolver problemas y monitorizar los dispositivos de red para su respectiva gestión en un entorno corporativo.<br>
+      </p>
+        
+        <br><img src="10.1.png" style="display: block; margin: 0 auto; width: 40%;"><p>
+        
+        <center>Edificio Beta, planta baja, Aula 1</center><br>
+        
+        <h2>Laboratorios de cómputo</h2>
+      <p>
+          <b>Encargados:</b><br>
+          <li>Edwin Ivan Ramirez Gomez.</li> 
+          <li>Hector David Salcedo Magaña.</li>
+          
+          <br><b>Actividades:</b><br>
+          <li>Mantenimiento, prácticas de software especializado.</li> 
+          <li>Infraestructura de red.</li>
+      </p>
+        
+        <br><img src="10.2.png" style="display: block; margin: 0 auto; width: 45%;"><p>
+        
+        <center>Módulo Alfa y Beta</center><br>
+        
+        <h2>Laboratorios de robots manipuladores</h2>
+      <p>
+          <b>Actividades:</b><br>
+          El objetivo principal del laboratorio es realizar prácticas para diversas clases de Ingeniería Robótica en los temas de cinemática, dinámica y control de robots.
+
+      </p>
+        
+        <br><img src="10.3.png" style="display: block; margin: 0 auto; width: 45%;"><p>
+        
+        <center>Edificio M</center><br>
+        
+        <h2>Laboratorios de sistemas inteligentes</h2>
+      <p>
+          <b>Actividades:</b><br>
+          El laboratorio de Sistemas Inteligentes es un laboratorio del Departamento de Ciencias Computacionales cuya misión es la de generar productos científicos y desarrollos tecnológicos, además de contribuir en la formación de recursos humanos de alto nivel, en las áreas de inteligencia artificial, robótica y control de sistemas.
+      </p>
+        
+        <br><img src="10.4.png" style="display: block; margin: 0 auto; width: 45%;"><p>
+        
+        <center>Edificio M</center><br>
+        
+        
+      
+    
+        
+        <p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles-index.css"> 
+  <link rel="stylesheet" href="styles-custom.css">
+  <style>
+    /* Estilos para la imagen del creador */
+    .creator-image {
+      max-width: 200px; /* Cambia el tamaño máximo de la imagen */
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Directorio de Servicios Universitarios</h1>      
+  </header>
+
+  <nav>
+    <div class="dropdown">
+      <button class="dropbtn" onclick="toggleDropdown()">Servicios</button>
+      <div id="dropdown-content" class="dropdown-content">
+        <a href="unidad-servicio-social.html">Unidad de Servicio Social</a>
+        <a href="biblioteca.html">Biblioteca</a>
+        <a href="servicios-medicos.html">Unidad de Servicios Médicos y Laboratorio de Análisis Clínicos</a>
+        <a href="modulo-actividades.html">Módulo de Actividades Culturales y Deportivas</a>
+        <a href="practicas-profesionales.html">Unidad de Vinculación y Prácticas Profesionales</a>
+        <a href="control.escolar.html">Control Escolar</a>
+        <a href="becas-intercambios.html">Unidad de Becas e Intercambios</a>
+        <a href="cta.html">Coordinación de Tecnologías para el Aprendizaje (CTA)</a>
+        <a href="centro-idiomas.html">Centro de Idiomas</a>
+        <a href="divtic.html">DIVTIC</a>
+        <a href="laboratorios.html">Laboratorios</a>
+        <a href="egresados.html">Egresados</a>
+        <a href="cucei.html">CUCEI</a>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="content">
+    <h2>Bienvenido al directorio de servicios universitarios</h2>
+    <p>¡Explora los servicios y recursos disponibles!</p>
+    <p>En el directorio, encontrarás una amplia gama de servicios diseñados para satisfacer las necesidades de nuestros estudiantes y personal académico. Desde apoyo en el área académica hasta actividades culturales.</p>
+    
+        <li>La Unidad de Servicio Social está comprometida con la comunidad, ofreciendo oportunidades de voluntariado y programas de impacto social.</li><br>
+    
+        <li>La Biblioteca es el corazón intelectual de nuestra institución, ofreciendo acceso a una amplia variedad de recursos de investigación y estudio.</li><br>
+    
+        <li>La Unidad de Servicios Médicos y Laboratorio de Análisis Clínicos garantiza atención médica de calidad y servicios de laboratorio para mantener la salud de nuestra comunidad universitaria.</li><br>
+    
+        <li>El Módulo de Actividades Culturales y Deportivas fomenta un estilo de vida equilibrado, ofreciendo oportunidades para el desarrollo personal a través de actividades recreativas.</li><br>
+    
+        <li>La Unidad de Vinculación y Prácticas Profesionales brinda orientación y oportunidades para que nuestros estudiantes se integren al mundo laboral.</li><br>
+    
+        <li>El Centro de Idiomas ofrece programas de aprendizaje de idiomas que enriquecen la experiencia educativa y profesional de nuestros alumnos.</li><br>
+    
+        <li>En los Laboratorios, los estudiantes tienen la oportunidad de aplicar los conocimientos adquiridos en el aula a través de experiencias prácticas y experimentos.</li><br>
+    
+        <li>Los Egresados mantienen una conexión vital con nuestra institución, y ofrece servicios para apoyar su desarrollo profesional continuo.</li><br>
+    
+    <p>Estos son solo algunos de los servicios que encontrarás en el directorio. ¡Haz clic en cada enlace para obtener más información sobre lo que ofrece!</p>
+  </section>
+  </main>
+
+  <div class="creator-info-container">
+    <button class="creator-info-btn" onclick="openCreatorInfo()" onmouseover="animateInfoButton()" onmouseout="restoreButtonColor()">Información del Creador</button>
+    <div id="creator-info-modal" class="modal">
+      <div class="modal-content">
+        <span class="close-btn" onclick="closeCreatorInfo()">&times;</span>
+        <center><h3>Información del Creador:</h3>
+        <p>Nombre: Juan Carlos Ramírez Flores</p>
+        <p>Código: 215638214</p>
+        <p>Correo electrónico: juan.ramirez1778@alumnos.udg.mx</p>
+        <img class="creator-image" src="JCRF.png" alt="Foto del creador"></center>
+      </div>
+    </div>
+  </div>
+
+  <div class="dark-overlay"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/parallax-js@1.5.0"></script>
+  <script>
+    function openCreatorInfo() {
+      document.getElementById('creator-info-modal').style.display = 'block';
+      document.querySelector('.dark-overlay').style.display = 'none';
+    }
+
+    function closeCreatorInfo() {
+  document.getElementById('creator-info-modal').style.display = 'none';
+  document.querySelector('.dark-overlay').style.display = 'none';
+}
+
+    function animateInfoButton() {
+      var infoButton = document.querySelector('.creator-info-btn');
+      infoButton.style.backgroundColor = '#FF9933';
+    }
+
+    function restoreButtonColor() {
+      var infoButton = document.querySelector('.creator-info-btn');
+      infoButton.style.backgroundColor = '#FF6600';
+    }
+
+    function toggleDropdown() {
+      var dropdownContent = document.getElementById('dropdown-content');
+      dropdownContent.classList.toggle('show');
+    }
+
+    window.onclick = function(event) {
+  var creatorModal = document.getElementById('creator-info-modal');
+  var darkOverlay = document.querySelector('.dark-overlay');
+
+  if (event.target === creatorModal) {
+    closeCreatorInfo();
+  }
+
+  if (event.target === darkOverlay) {
+    closeCreatorInfo();
+  }
+
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName('dropdown-content');
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+        }
+      }
+    }
+  </script>
+</body>
+</html>

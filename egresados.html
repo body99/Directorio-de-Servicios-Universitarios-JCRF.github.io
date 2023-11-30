@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <meta charset="UTF-8">
+  <title>Unidad de Servicio Social</title>
+  <link rel="stylesheet" href="styles.css">
+ <script>
+document.addEventListener('DOMContentLoaded', function() {
+  var header = document.querySelector('header');
+
+  gsap.from(header, {
+    duration: 1.5, // Duración de la animación en segundos
+    y: -100, // Mover el header hacia arriba (-100px)
+    opacity: 0, // Establecer opacidad inicial a 0
+    ease: "power4.out" // Tipo de easing
+  });
+});
+  </script>
+</head>
+<body>
+
+  <header>
+    <h1><center>Egresados</center></h1>
+  </header>
+
+  <main>
+
+    <section>
+      <h2>Ubicación</h2>
+        
+        <br><img src="11.1.png" style="display: block; margin: 0 auto; width: 60%;"><p>
+        <br><img src="11.2.png" style="display: block; margin: 0 auto; width: 50%;"><p><br>
+        
+        <h2>Proceso de egreso</h2>
+        <br><img src="11.3.png" style="display: block; margin: 0 auto; width: 60%;"><p><br>
+        
+        <h2>Pasos para titulación desde que terminas créditos</h2>
+      <p>
+          1. Verificar que aparezcan la totalidad de los créditos en el Kardex ajustados en sus áreas correspondientes.En caso de no tenerlos, solicitar en Coordinación el Ajuste de Créditos de Optativas Abiertas y Especializantes Selectivas
+          <br>2. Solicitar el Cambio de Estatus de ACTIVO a EGRESADO en la coordinación.
+          <br>3. Una vez reflejado el cambio de estatus, seleccionar la modalidad de Titulación que más se se adapte a tu perfil académico y presenta los documentos necesarios en la Coordinación.<br>
+
+          <br>Al optar por la <b>modalidad de titulación (directa):</b> Excelencia, promedio y diseño de equipo (ganador proyecto modular).<br>
+          <br>Esperar la Evaluación en la próxima sesión del Comité de Titulación:<br>
+          
+          <li>Se entrega el Comprobante Académico.</li>
+          <li>Se entrega el Dictamen de Aprobación.</li>
+          
+          <br><b>Modalidad de titulación por Examen Global Teórico:</b>
+          <br>Esperar la Evaluación en la próxima sesión del Comité de Titulación (Solo en caso de pasar el examen): <br>
+          
+          <li>Se entrega el Comprobante Académico.</li>
+          <li>Se entrega el Oficio con Calificaciones del EGT.</li>
+          
+          <br><b>Modalidades de Titulación: Guías comentadas, Diseño de Equipo, Seminario de Investigación, Tesis, Informe de Practicas Profesionales.</b><br>
+          Esperar la Evaluación en la próxima sesión del Comité de Titulación (Solo en caso de pasar el examen): <br>
+          
+          <li>Se entrega el Dictamen de Aprobación.</li>
+          <li>Desarrolla tu proyecto y una vez terminado, preséntalo en Coordinación, en formato PDF junto con el Formato de Autorización de Impresión.</li>
+          <li>Se entrega el Comprobante Académico.</li>
+          <li>Descargar y llenar el Formato de Autorización para Publicación de Documentos.</li><br>
+          
+          De tener un dictamen no aprobatorio, atender las observaciones y esperar la próxima sesión.</p><br>
+        
+          <h2>Titulación</h2>
+          <b>Requisitos</b><br>
+          
+          <li>3 Fotografías tamaño título.</li>
+          <li>Solicitud de Expedición y Registro de Títulos, Diplomas y Grados.</li>
+          <li>Ficha de pago del arancel, debidamente pagada.</li>
+          <li>Ficha de pago del pergamino, debidamente pagada.</li>
+          <li>Kardex y copia de acta de titulación.</li>
+          <li>Original de la constancia de terminación de Servicio Social.</li>
+          <li>Original del acta de nacimiento, impresión de CURP reciente y original de Certificado de Bachillerato.</li>
+          
+        
+        
+        
+        
+          <br><p><a href="index.html"><i class="fas fa-arrow-left"></i> Regresar al Directorio de Servicios Universitarios</a></p> 
+        
+        
+    </section>
+  </main>
+<footer>
+  <p><center>&copy; 2023 Universidad de Guadalajara. Developed by Juan Carlos Ramírez Flores</center></p>
+</footer>
+
+<script>
+  window.addEventListener('scroll', function() {
+    var windowHeight = window.innerHeight;
+    var body = document.body;
+    var html = document.documentElement;
+    var documentHeight = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+    var scrolled = window.scrollY;
+
+    if (windowHeight + scrolled >= documentHeight) {
+      body.classList.add('footer-active');
+    } else {
+      body.classList.remove('footer-active');
+    }
+  });
+</script>
+    
+    
+
+</body>
+</html>
